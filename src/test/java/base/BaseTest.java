@@ -8,15 +8,15 @@ import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	
-	protected WebDriver driver;
+
+    protected WebDriver driver;
 
     @BeforeMethod
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://example.com/login");
+        driver.get("https://www.saucedemo.com/");
     }
 
     @AfterMethod

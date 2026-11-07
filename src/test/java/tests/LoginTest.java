@@ -7,13 +7,13 @@ import base.BaseTest;
 import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
-	
-	@Test
+
+    @Test
     public void testValidLogin() {
         LoginPage login = new LoginPage(driver);
-        login.login("user@example.com", "password123");
+        login.login("standard_user", "secret_sauce");
 
         // Example assertion — replace with your actual logic
-        Assert.assertTrue(driver.getTitle().contains("Dashboard"));
+        Assert.assertTrue(driver.getTitle().contains("Swag Labs"));
     }
 }
